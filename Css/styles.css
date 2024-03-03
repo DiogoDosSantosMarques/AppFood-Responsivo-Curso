@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #00334e;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+
+#topo {
+  background-color: #fff2d9;
+  padding: 15px;
+  overflow: hidden;
+
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#topo .menu ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+#topo .menu li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.menu ul li a {
+  color: #444;
+}
+
+.menu li a:hover {
+  color: #e5d96d;
+}
+
+#topo .logo {
+  float: left;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+#topo img {
+  vertical-align: middle;
+}
+
+#topo .menu {
+  float: right;
+}
+
+/* Responsividade Header*/
+
+/* Banner */
+.bloco-2 {
+  width: 50%;
+  float: left;
+}
+
+#banner {
+  background-color: #fff2d9;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+#banner h2 {
+  font-size: 48px;
+}
+
+#banner p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+#banner .icon-whats {
+  padding: 18px 5px 18px 50px;
+  border: none;
+  border-radius: 6px 0 0px 6px;
+  background: url(/img/whats.png) no-repeat 20px center #fff;
+  width: 60%;
+  background-size: 20px auto;
+}
+
+#banner input::placeholder {
+  color: #00334e;
+}
+
+#banner .bt-whats {
+  padding: 20px 5px;
+  border: none;
+  background: #00334e;
+  color: whitesmoke;
+  border-radius: 0 8px 8px 0;
+  width: 10%;
+  cursor: pointer;
+}
+
+/* Responsividade Banner */
+
+@media (max-width: 792px) {
+  .bloco-2 {
+    width: 100%;
+  }
+
+  #banner h2,
+  #banner p,
+  #banner form {
+    text-align: center;
+  }
+
+  #banner img {
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .bloco-3 .imagem {
+    width: 100%;
+  }
+}
+
+/* Cardapio Imagens Haburguers*/
+
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+#cardapio .bloco-3 {
+  float: left;
+  padding: 20px;
+
+  width: 33%;
+}
+
+.cardapio img {
+  width: 100%;
+}
+
+.infos-prato h2 {
+  margin-bottom: 0;
+}
+
+.infos-prato p {
+  margin-top: 10px;
+}
+
+.infos-prato {
+  text-align: center;
+}
+
+.peca {
+  background: rgb(141, 143, 19);
+  display: block;
+  border: 1px solid whitesmoke;
+  color: white;
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  /* Margin Auto centraliza o elemento na div pai*/
+  margin: 20px auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* Section Receba*/
+#receba .bloco-3 {
+  display: inline-block;
+  padding: 20px;
+
+  width: 33%;
+}
+
+.receba .bloco-3 {
+  text-align: center;
+}
+
+.receba .imagem img {
+  width: 150px;
+  margin-top: 60px;
+}
+
+/* Section Vantagens*/
+
+#vantagens {
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+#vantagens .bloco-2 img {
+  width: 350px;
+  margin-left: 15%;
+  padding-top: 50px;
+  background-color: antiquewhite;
+  display: block;
+}
+
+#vantagens .numero {
+  width: 20%;
+  float: left;
+  color: #aaa;
+  font-size: 35px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+#vantagens .vantagens {
+  width: 80%;
+}
+
+/* Responsividade Vantagens*/
+
+@media (max-width: 900px) {
+  #vantagens .bloco-2 {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .bloco-2 {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Depoimentos */
+
+#depoimentos {
+  margin-top: 150px;
+  overflow: hidden;
+}
+
+#depoimentos .cliente {
+  float: left;
+  width: 50%;
+}
+
+.cliente img {
+  width: 50px;
+}
+
+.cliente .c-info {
+  display: inline-block;
+}
+
+#depoimentos .bloco-2 .a {
+  margin-left: 20%;
+}
+
+/* Parceiros */
+#parceiros {
+  margin-top: 10%;
+  background-color: antiquewhite;
+  overflow: hidden;
+}
+
+#parceiros .bloco-4 {
+  float: left;
+  width: 24%;
+  padding: 25px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#parceiros .bloco-4 img {
+  width: 200px;
+}
+
+/*Responsividade Parceiros */
+
+@media (max-width: 815px) {
+  #parceiros .bloco-4 {
+    width: 50%;
+  }
+}
